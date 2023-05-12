@@ -1,16 +1,13 @@
 
-import axios, { all } from 'axios'
+import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 
 const CreateAllBl = () => {
     const name = useParams()
-   const[vessel,setvessel] = useState([])
-   const[port,setPort] = useState([])
-   const[verify,setverify]=useState([])
    const[count,setCount] = useState(0)
    const[select,setSelect] = useState(null)
-   const [bldata,setBldata] = useState([])
+
 
     const [data,setdata]= useState({
         portname:"",

@@ -13,9 +13,8 @@ export const SBL = () => {
   const [customer,setCustomer] = useState([])
   const [search,setSearech] = useState([])
   const [bl,setBl] = useState([])
-  const [allbl,setallbl] = useState([])
   var i=1;
-  const [count,setCount] = useState(1)
+
   useEffect(()=>{
     axios.get("/bl/allbl")
     .then((res)=>{

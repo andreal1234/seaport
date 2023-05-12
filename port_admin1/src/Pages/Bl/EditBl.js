@@ -1,15 +1,12 @@
 import axios from 'axios'
 import moment from 'moment';
 import React, { useEffect, useState } from 'react'
-import { Link, useParams } from 'react-router-dom'
-import { ToastContainer, toast } from 'react-toastify';
+import {  useParams } from 'react-router-dom'
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const EditBl = () => {
     const name = useParams();
-    const [vessel,setvessel] = useState([])
-    const [port,setPort] = useState([])
-    const[vog,setvog]=useState([])
 
     const [blData,setBlData]=useState({
         vesselOwner:"",
